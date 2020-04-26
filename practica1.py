@@ -20,7 +20,7 @@ print("Hola "+nombre+". Si no me equivoco tienes", edad,"años.")
 
 # Versión alternativa para el IF
 # if taburete in ('Si','Sí','S','s','si','sí'):
-if (taburete=="Si" or taburete=="Sí" or taburete=="S"):
+if (taburete=="Si" or taburete=="Sí" or taburete=="S" or taburete=="s"):
     print("OK boomer. Lo tuyo va a ser un caso difícil")
 else:
     print("Bueno, al menos es un comienzo. Veremos qué se puede hacer contigo.")
