@@ -52,17 +52,21 @@ while (menu!=3):
     print("2. Descifrar")
     print("3. Salir")
 
-    menu=int(input("Elige qué quieres hacer:"))
+    try:
+        menu=int(input("Elige qué quieres hacer:"))
+    except:
+        print ("Por favor, pulse los números 1, 2 o 3")
+        continue
     
     if (menu==1):
         texto_claro=input("\nEscribe el texto a cifrar:")
         clave=int(input("Escribe la clave de cifrado (un número del 1 al 27):"))
         cifrado=cifracesar(texto_claro,clave)
-        print ("El texto cifrado es:",cifrado)
+        print ("\nEl texto cifrado es:",cifrado)
     elif (menu==2):
         cifrado=input("\nEscribe el texto a descifrar:")
         clave=int(input("Escribe la clave de descifrado (un número del 1 al 27):"))
         descifrado=descifracesar(cifrado,clave)
-        print ("El texto descifrado es:",descifrado)
+        print ("\nEl texto descifrado es:",descifrado)
 
         
